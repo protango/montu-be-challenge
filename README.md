@@ -38,3 +38,9 @@ Requirements:
 4. The result elements should contain important information about the place (country, municipality, etc)
 5. The returned result should be typed and easily consumable via users of the library
 6. No front-end requirements are necessary, this is purely a backend NodeJS library
+
+Generating API Types:
+=============
+This project leverages `openapi-typescript` to generate type definitions for the TomTom API, based on
+their openapi specification. To re-generate the type definitions, simply run `yarn generate-api-types`.
+The latest specification will be downloaded and new types generated.
