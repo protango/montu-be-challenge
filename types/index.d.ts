@@ -1,5 +1,6 @@
 import { CountryCode } from "./countryCode";
 
+/** Details about a place */
 export interface AutocompleteDetails {
   /** A stable unique id for the POI index, and a non-stable unique id for the other indexes. Note: Stable id means that it doesn't change between data releases without changing the location, attribution or classification. */
   placeId: string;
