@@ -3,6 +3,11 @@ import { CountryCode } from '../types/countryCode';
 import { CONFIG } from './config';
 import { getPlaceAutocomplete } from './maps-api'
 
+/**
+ * Search for an imcomplete address and return possible place matches, located in Australia.
+ * @param address The partial address to search for
+ * @returns An array of potential matches to the address
+ */
 export async function getAutoCompleteDetails(address: string): Promise<AutocompleteDetails[]> {
     const apiKey = CONFIG.TOMTOM_API_KEY;
     // get autocomplete results
